@@ -1,0 +1,255 @@
+<html>   
+
+
+    <head>
+        <title> Services </title>
+    
+        <link rel="stylesheet" type="text/css" href="OurStyles.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <style>
+                .content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: lightyellow;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .flex-div{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                background: blue;
+                padding: 2rem;
+                width: 530px;
+                min-height: 220px;
+                border-radius: 0.5rem;
+                box-shadow: 0 2px 4px rgba(0 0 0 / 10%), 0 8px 16px rgba(0 0 0 / 10%);
+            }
+            form input{
+                outline: none;
+                padding: 0.8rem 1rem;
+                margin-bottom: 0.8rem;
+                font-size: 1.1rem;
+                height: 20px;
+            }
+            form input:focus{
+                border: 1.8px solid green;
+            }
+            form .login{
+                outline: none;
+                border: none;
+                background: violet;
+                padding: 0.8rem 1rem;
+                border-radius: 0.4rem;
+                font-size: 1.1rem;
+                color: yellow;
+            }
+            form .login:hover{
+                background: blue;
+                cursor: pointer;
+            }
+            form a{
+                text-decoration: none;
+                text-align: center;
+                font-size: 1rem;
+                padding-top: 0.8rem;
+                color: red;
+            }
+            #close{
+                display: block;
+                margin: auto;
+                margin-top: 10px;
+            }
+            .s_txt{
+                padding-bottom: 20px;
+                text-align: center;
+                color: green;
+            }
+            #main{
+                font-family: Tahoma;
+                background: rgba(0,0,0,0.3);
+                width: 100%;
+                height: 769px;
+                position: fixed;
+                left: 0;
+                top: 0;
+                display: none;
+            }
+            #submit{
+                height: 50px;
+            }
+        </style>
+
+
+    </head>
+
+    <body> 
+        <div class="logo">
+            <a href="#"><img class="Logo1" src="images/MyLogoSG.png" style="width: 250px;"></a>
+        
+            <nav>
+                <ul>    
+                    <li><a href="HomePa.html" ><button class="btn-1">Home</button>            
+                <span></span>
+                </a></li>
+                    <li><a href="AboutUs.html"><button class="btn-2"> About Us</button>
+                <span></span>
+                </a></li>
+                    <li><a href="ServicesPa.html"> <button class="btn-3">Services</button>
+                </a></li>
+                    <li><a href="BlogPa.html"><button class="btn-4">Blog</button>
+                <span></span>
+                </a></li>
+                    <li><a href="ContactPa.html"><button class="btn-5">Contact</button>
+                <span></span>
+                </a></li>
+                </ul>
+                
+            </nav> 
+        </div>      
+
+    <div class="container">
+            <div class="service_s">
+                <h1><span>Our Services</span></h1>
+                <p>HOW CAN WE HELP YOU?
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="column-md-4">
+                    <div class="service-box">
+                        <i class="fa fa-list-ul"></i>
+                        <h3><span>List of services</span></h3>
+                        <p>Our online platform offers the following:
+                        </p>
+
+                        <img class="images" src="Electric.jpg" height="200px" width="200px" >
+                        <img class="images" src="Spray.jpg" height="200px" width="200px" >
+                        <img class="images" src="Engine 2.jpg" height="200px" width="200px" >
+                        <img class="images" src="Pads.jpg" height="200px"  width="200px" >
+
+                        <pre ><h4><span>Panel beating                Spray painting               Automotives        Spares & maintenance      &  more</span></h4></pre>
+
+                        
+                    </div>
+                </div>              
+            </div>
+
+            <div class="row">
+                <div class="column-md-4">
+                    <div class="service-box">
+                        <i class="fa fa-user"></i>
+                        <h3><span>Price and details</span></h3>
+                        <p>
+                            <ul class="p2">
+                                <li>Panel beating:   M200.00-M500.00</li>
+                                <li>Spray painting:  M100.00-M500.00</li>
+                                <li>Tyres:           M250.00-500.00</li>                                
+                                <li>Oils:             M50.00-M250.00</li>
+                                <li>Tinting:     M100.00-M240.00</li> 
+                                <li>Spare parts:     M100.00-M150.00</li>
+                                <li>overhauling:     M100.00-M190.00</li>
+                                <li>Polishing:     M200.00-M400.00</li>
+
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>              
+            </div>
+
+            <div class="row">
+                <div class="column-md-4">
+                    <div class="service-box">
+                        <i class="fa fa-line-chart"></i>
+                        <h3><span>Payment gateway</span></h3>
+                        <p>You can order now!!
+                        </p>                        
+                    </div>
+                </div>              
+            </div>
+
+            
+        </div>
+
+        <button id="popBtn" style="display: block; margin: auto; margin-left: 320px; margin-top: -240px">Order Now</button>
+        <div id="main">
+            <div class="content">
+                <div class="flex-div">
+                    <form action="index.php" method="get">
+                    <div>
+                        <span>Card holder name</span>
+                        <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                    </div>
+
+                    <div>
+                        <span>Card number</span>
+                        <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                    </div>
+
+                    <div>
+                        <span>Card expiry date</span>
+                        <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                    </div>
+
+                    <div>
+                        <!-- This is the select option -->
+                        <span>How many items?</span>
+                        <select name="people" id="people" required>
+                            <option value="">No. of items </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <span>Card cvv</span>
+                        <input type="text" name="time" id="time" placeholder="945" required>
+                    </div>
+
+                    <div>
+                        <span>Date of issue</span>
+                        <input type="date" name="date" id="date" placeholder="date" required>
+                    </div>
+
+                    
+
+                    <div id="submit">
+                        <input type="submit" value="SUBMIT" id="submit">
+                    </div>
+                        
+                    
+                </form>
+                </div>
+                <button id="close" style="padding: 2px 10px; cursor: pointer;">Done</button>
+            </div>
+        </div>
+
+        <script>
+            let show = document.getElementById('popBtn');
+
+            show.onclick = function() {
+                document.getElementById('main').style.display = 'block';
+            }
+
+            let hide = document.getElementById('close');
+
+            hide.onclick = function() {
+                document.getElementById('main').style.display = 'none';
+            }
+        </script>
+
+    </body>
+
+
+</html>
